@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dropdown-container {
+            position: relative;
+            display: inline-block;
+            background-color: aqua;
+        }
+
+        .dropdown-content a{
+            text-decoration: none;
+            color: rgb(245, 139, 10);
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: aqua;
+
+        }
+
+        .dropdown-container:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="dropdown-container">
+        <button class="dropdown-button">Hover me</button>
+        <div class="dropdown-content">
+            <a href="#" class="dropdown-item item1">Item 1</a>
+            <a href="#" class="dropdown-item item2">Item 2</a>
+            <a href="#" class="dropdown-item item3">Item 3</a>
+        </div>
+    </div>
+</body>
+
+</html>
