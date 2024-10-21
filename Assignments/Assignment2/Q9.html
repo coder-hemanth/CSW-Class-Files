@@ -1,44 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .dropdown-container {
-            position: relative;
-            display: inline-block;
-            background-color: aqua;
+        .main{
+            width:60vh;
+            margin: 40px auto;
+            border: 2px solid black;
+            text-align: center;
         }
-
-        .dropdown-content a{
+        .btn{
+            color: green;
+            font-size: 20px;
+            border: none;
+            box-shadow: 0px 3px 3px 2px black;
+        }
+        .btn:hover{
+            cursor: pointer;
+        }
+        .elements{
+           width: 35%;
+           display: none;
+           background-color: aqua;
+        }
+        .elements a{
             text-decoration: none;
-            color: rgb(245, 139, 10);
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: aqua;
-
-        }
-
-        .dropdown-container:hover .dropdown-content {
             display: block;
+            padding: 12px;
+            color: #000;
+
+        }
+        .elements a:hover{
+            background-color: blue;
+        }
+        .main:hover .elements{
+            display: block;
+
         }
     </style>
 </head>
-
 <body>
-    <div class="dropdown-container">
-        <button class="dropdown-button">Hover me</button>
-        <div class="dropdown-content">
-            <a href="#" class="dropdown-item item1">Item 1</a>
-            <a href="#" class="dropdown-item item2">Item 2</a>
-            <a href="#" class="dropdown-item item3">Item 3</a>
+    <div class="main">
+        <p>Click the dropdown</p>
+        <div class="dropdown">
+            <button class="btn">Dropdown</button>
+            <div class="elements">
+                <a href="HTML">HTML</a>
+                <a href="CSS">CSS</a>
+                <a href="JAVASCRIPT">JAVASCRIPT</a>
+                <a href="JAVA">JAVA</a>
+            </div>
         </div>
     </div>
+    
 </body>
-
 </html>

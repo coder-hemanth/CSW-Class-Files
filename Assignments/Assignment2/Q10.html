@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .img img{
+            width:180px;
+        }
+        .img{
+            display:flex;
+            justify-content: center;
+        }
+        form{
+            margin:20px 40%;
+            border:3px solid black;
+            padding:30px
+        }
+    </style>
+</head>
+<body>
+    <div class="img">
+        <img src="https://i.pinimg.com/736x/d3/ca/7e/d3ca7e8eea8e78f9310096774ec4f423.jpg" alt="">
+    </div>
+    <form action="">
+        <div>
+
+            <label for="name">Name:</label>
+            <input type="text" name="" id="name" placeholder="Enter Your Name" required>
+        </div>
+        <br>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="" id="email" placeholder="Enter email">
+        </div>
+        <br>
+        <div>
+            <label for="radio">Male</label>
+            <input type="radio" name="na" id="radio">
+            <label for="radio">Female</label>
+            <input type="radio" name="na" id="radio">
+
+        </div>
+        <br>
+        <div>
+            <label for="select">Enter section:</label>
+            <select name="" id="select">
+                <option value="2G3">2G3</option>
+                <option value="2G4">2G4</option>
+                <option value="2G5">2G5</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" name="" id="password" class="pass" pattern="(?=.*\b)(?=.*[a-z])(?=.*[A-Z]).{8}" title="password must contain 8 characters" placeholder="Enter password">
+            
+        </div>
+        <br>
+        <div>
+            <button type="submit">
+                Click here to submit
+            </button>
+        </div>
+    </form>
+</body>
+</html>
