@@ -1,29 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>
-        $(document).ready(function(){
-            $("#fadeto").click(function(){
-                $("#div1").fadeTo("slow",0.15);
-                $("#div2").fadeTo("slow",0.4);
-                $("#div3").fadeTo("slow",0.7);
-
+        $(document).ready(function () {
+            $("#fadeto").click(function () {
+                $("#div1").fadeTo("slow", 0.15);
+                $("#div2").fadeTo("slow", 0.4);
+                $("#div3").fadeTo("slow", 0.7);
             });
-            $("#fadein").click(function(){
+            $("#fadein").click(function () {
                 $("#div4").fadeIn();
                 $("#div5").fadeIn("slow");
                 $("#div6").fadeIn(3000);
             });
-            $("#fadeout").click(function(){
+            $("#fadeout").click(function () {
                 $("#div11").fadeOut("fast");
                 $("#div22").fadeOut("slow");
                 $("#div33").fadeOut(3000);
             });
-            $("#fadetoggle").click(function(){
+            $("#fadetoggle").click(function () {
                 $("#div44").fadeToggle();
                 $("#div55").fadeToggle("slow");
                 $("#div66").fadeToggle(3000);
@@ -33,69 +33,91 @@
 
     </script>
     <style>
-        .table{
-            display:table;
-            border:0;
-            border-collapse:collapse;
-            margin:20px auto;
-        
-        }
-        .row{
-            display:table-row;
-
+        .table {
+            display: table;
+            border: 0;
+            border-collapse: collapse;
+            margin: 20px auto;
 
         }
-        .cell{
-            display:table-cell;
+
+        .row {
+            display: table-row;
+        }
+
+        .cell {
+            display: table-cell;
             padding: 10px;
-            border-bottom:2px solid grey
+            border-bottom: 2px solid grey;
         }
-        .cell:nth-child(odd){
-            border-right:1px solid grey;
+
+        .cell:nth-child(odd) {
+            border-right: 1px solid grey;
         }
-        #div4,#div5,#div6{
-            display:none;
+
+        #div4,
+        #div5,
+        #div6 {
+            display: none;
         }
-        #div1,#div2,#div3,#div4,#div5,#div6,#div11,#div22,#div33,#div44,#div55,#div66{
-            width:80px;
-            height:80px;
+
+        #div1,
+        #div2,
+        #div3,
+        #div4,
+        #div5,
+        #div6,
+        #div11,
+        #div22,
+        #div33,
+        #div44,
+        #div55,
+        #div66 {
+            width: 80px;
+            height: 80px;
         }
-        #div1,#div4,#div11,#div44{
+
+        #div1,
+        #div4,
+        #div11,
+        #div44 {
             /* background-color: green; */
             background: green;
 
         }
-        #div2,#div5,#div55,#div22{
+
+        #div2,
+        #div5,
+        #div55,
+        #div22 {
             background-color: red;
         }
-        #div3,#div6,#div33,#div66{
+
+        #div3,
+        #div6,
+        #div33,
+        #div66 {
             background-color: blue;
         }
-
-
     </style>
 </head>
+
 <body>
     <div class="table">
         <div class="row">
             <div class="cell">
                 <p>Demonstrate Fadeto() with different parameter</p>
-
             </div>
             <div class="cell">
                 <p>Demonstrate fadeIn() with prameters</p>
-
             </div>
-            
         </div>
         <div class="row">
             <div class="cell">
                 <button id="fadeto">click fade boxes</button>
                 <br>
                 <br>
-                <div id="div1">
-                    
-                </div>
+                <div id="div1"></div>
                 <br>
                 <div id="div2"></div>
                 <br>
@@ -128,21 +150,21 @@
                 <br>
             </div>
             <div class="cell">
-               <button id="fadetoggle">
-                click to demonstrate fade toggle
-
-               </button>
-               <br>
-               <br>
-               <div id="div44"></div>
-               <br>
-               <div id="div55"></div>
-               <br>
-               <div id="div66"></div>
+                <button id="fadetoggle">
+                    click to demonstrate fade toggle
+                </button>
+                <br>
+                <br>
+                <div id="div44"></div>
+                <br>
+                <div id="div55"></div>
+                <br>
+                <div id="div66"></div>
 
             </div>
         </div>
     </div>
-    
+
 </body>
+
 </html>
