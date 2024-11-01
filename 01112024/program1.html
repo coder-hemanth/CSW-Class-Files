@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#b1").click(function () {
+                alert("Text: "+$("#par").text());
+                $("#par").text("Set Content");
+            });
+            $("#b2").click(function() {
+                alert("HTML: "+$("#par1").html());
+                $("#par1").html("<b>Set content to bold</b>");
+            });
+            $("#b3").click(function() {
+                alert("Value: "+$("#txt").val());
+                $("#txt").val("Value Changed");
+            });
+            $("#b4").click(function () {
+                alert($("#go").attr("href"));
+                $("#go").attr("href","https://www.netflix.com");
+            });
+        });
+    </script>
+</head>
+<body>
+    <div style="display: flex;">
+        <div id="mar">
+            <p id="par">This line is part of a paragraph <b>and contains bold text.</b></p>
+            <button id="b1">Display text</button>
+        </div>
+        <div id="mar">
+            <p id="par1">This line is part of a paragraph <b>and contains bold text.</b></p>
+            <button id="b2">Display html code</button>
+        </div>
+        <div id="mar">
+            <p>Username: <input type="text" id="txt" value="Ghost Rider"></p>
+            <button id="b3">Check the value</button>
+        </div>
+    </div>
+    <p><a href="https://www.google.com" id="go">Google</a></p>
+    <button id="b4">Show href Value</button>
+</body>
+</html>
