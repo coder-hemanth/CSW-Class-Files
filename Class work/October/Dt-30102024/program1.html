@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function (){
+            $("#flip").click(function () {
+                $("#panel").slideDown("slow");
+            });
+            $("#flip1").click(function () {
+                $("#panel1").css("color","red").slideUp("slow").slideDown("2000");
+            });
+            $("#flip2").click(function () {
+                $("#panel2").slideToggle("slow");
+            });
+        });
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+            margin: 0;
+        }
+        #box {
+            display: flex;
+            flex-direction:row; 
+            gap: 10px; 
+        }
+        .box {
+            background: white;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            transition: transform 0.3s;
+        }
+        .box:hover {
+            transform: scale(1.02); 
+        }
+        .flip {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .flip:hover {
+            background-color: #0056b3;
+        }
+        #panel, #panel2 {
+            padding: 10px;
+            display: none; 
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-top: 10px; 
+        }
+        #panel1 {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-top: 10px; 
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <div id="box1" class="box">
+            <div id="flip" class="flip">Click to Slide Down Panel</div>
+            <div id="panel">Slider</div>
+        </div>
+        <div id="box2" class="box">
+            <div id="flip1" class="flip">Click to slide up panel</div>
+            <div id="panel1">Slider</div>
+        </div>
+        <div id="box3" class="box">
+            <div id="flip2" class="flip">Click to toggle panel</div>
+            <div id="panel2">Slider</div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .table-container {
+            width: 100%;
+            overflow-x: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 18px;
+            text-align: left;
+        }
+        caption {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        th,td {
+            padding: 8px;
+            white-space: nowrap;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        th {
+            border-bottom: 5px solid black;
+        }
+        td {
+            border-bottom: 3px solid rgb(92,156,185);
+            border-right: 3px solid rgb(131,123,222);
+        }
+    </style>
+</head>
+<body>
+    <div class="table-container">    
+        <table width="100%">
+            <caption>Student Report</caption>
+            <tr>
+                <th>Student Name</th>
+                <th>Roll No.</th>
+                <th>Math</th>
+                <th>Science</th>
+                <th>English</th>
+                <th>Total Marks</th>
+                <th>Grade</th>
+            </tr>
+            <tr>
+                <td>Pinky</td>
+                <td>101</td>
+                <td>85</td>
+                <td>90</td>
+                <td>88</td>
+                <td>263</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>Hemanth</td>
+                <td>102</td>
+                <td>85</td>
+                <td>90</td>
+                <td>88</td>
+                <td>263</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>Ansh</td>
+                <td>103</td>
+                <td>32</td>
+                <td>32</td>
+                <td>100</td>
+                <td>164</td>
+                <td>C</td>
+            </tr>
+        </table>
+    </div>
+    
+
+</body>
+</html>
