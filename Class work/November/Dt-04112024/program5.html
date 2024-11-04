@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("div").children().css({color: "red", border: "2px solid red"});
+            //$("div").children("p.first").css({color: "red", border: "2px solid red"});
+            //$("div").find("span").css({color: "red", border: "2px solid red"});
+           // $("div").find("*").css({color: "red", border: "2px solid red"});
+
+        });
+    </script>
+    <style>
+        .decendants *{
+            display: block;
+            border: 2px solid lightgray;
+            color: lightgrey;
+            padding: 15px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="decendants" style="width: 500px">
+        div (current element)
+        <p class="first">
+            p (child)
+            <span>span (grandchild)</span>
+        </p>
+        <p class="second">
+            p (child)
+            <span>span (grandchild)</span>
+        </p>
+    </div>
+</body>
+</html>
