@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#btn1").click(function () {
+                $("body").css("background-color","red");
+            });
+            $("#btn2").click(function () {
+                $("body").css("background-color","blue");
+            });
+            $("#btn3").click(function () {
+                $("body").css("background-color","green");
+            });
+            $("#btn4").click(function () {
+                $("div").toggle();
+            });
+        });
+    </script>
+    <style>
+        div {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="btn1">Make red</button>
+    <button id="btn2">Make blue</button>
+    <button id="btn3">Make green</button>
+    
+    <div>
+        This is div
+    </div>
+    <button id="btn4">Toggle visibility</button>
+</body>
+
+</html>

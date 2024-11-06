@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("div").click(function() {
+                $("div").text("This div is clicked");
+            });
+            $("div").dblclick(function() {
+                $("div").css("background-color","orange");
+            });
+            $("div").mouseenter(function() {
+                $("div").css("border","5px solid green");
+            });
+            $("div").mouseleave(function() {
+                $("div").css("border","5px solid black");
+            });
+        })
+    </script>
+    <style>
+        div {
+            background-color: lightblue;
+            border: 5px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        This is div is unclicked
+    </div>
+</body>
+</html>
