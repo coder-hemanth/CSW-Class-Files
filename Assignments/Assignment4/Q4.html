@@ -21,43 +21,64 @@
     <div class="container">
         <h1>Alerts</h1>
 
-        <div class="alert alert-success alert-dismissible fade show">
+        <div id="alert1" class="alert alert-success alert-dismissible">
             <strong>Success!</strong> Such an alert generates the result of a positive or successful activity.
             <a href="#" class="alert-link">Click here</a>
-            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <button id="btn1" type="button" class="close" data-dismiss="alert">&times;</button>
         </div>
 
-        <div class="alert alert-info alert-dismissible fade show">
+        <div id="alert2" class="alert alert-info alert-dismissible fade show">
             <strong>Info!</strong> Such an alert describes a piece of information which can neither be categorized as positive or negative.
             <a href="#" class="alert-link">Click here</a>
-            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <button id="btn2" type="button" class="close" data-dismiss="alert">&times;</button>
         </div>
 
-        <div class="alert alert-warning alert-dismissible fade show">
+        <div id="alert3" class="alert alert-warning alert-dismissible fade show">
             <strong>Warning!</strong> Such an alert generates a warning for the user.
             <a href="#" class="alert-link">Click here</a>
-            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <button id="btn3" type="button" class="close" data-dismiss="alert">&times;</button>
         </div>
 
-        <div class="alert alert-danger alert-dismissible fade show">
+        <div id="alert4" class="alert alert-danger alert-dismissible fade show">
             <strong>Danger!</strong> Such an alert describes the presence of a negative action.
             <a href="#" class="alert-link">Click here</a>
-            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <button id="btn4" type="button" class="close" data-dismiss="alert">&times;</button>
         </div>
 
-        <div class="alert alert-primary alert-dismissible fade show">
+        <div id="alert5" class="alert alert-primary alert-dismissible fade show">
             <strong>Primary!</strong> Such an alert describes important information.
             <a href="#" class="alert-link">Click here</a>
-            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <button id="btn5" type="button" class="close" data-dismiss="alert">&times;</button>
         </div>
 
-        <div class="alert alert-secondary alert-dismissible fade show">
+        <div id="alert6" class="alert alert-secondary alert-dismissible fade show">
             <strong>Secondary!</strong> Such an alert describes low priority information.
             <a href="#" class="alert-link">Click here</a>
-            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <button id="btn6" type="button" class="close" data-dismiss="alert">&times;</button>
         </div>
-
     </div>
+    <script>
+        $(document).ready(function() {
+            $("#btn1").click(function() {
+                $("#alert1").fadeOut(5000);
+            });
+            $("#btn2").click(function() {
+                $("#alert2").fadeOut(5000);
+            });
+            $("#btn3").click(function() {
+                $("#alert3").fadeOut(5000);
+            });
+            $("#btn4").click(function() {
+                $("#alert4").fadeOut(5000);
+            });
+            $("#btn5").click(function() {
+                $("#alert5").fadeOut(5000);
+            });
+            $("#btn6").click(function() {
+                $("#alert6").fadeOut(5000);
+            });
+        });
+    </script>
 </body>
 
 </html>
