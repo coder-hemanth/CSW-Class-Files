@@ -59,24 +59,11 @@
     </div>
     <script>
         $(document).ready(function() {
-            $("#btn1").click(function() {
-                $("#alert1").fadeOut(5000);
-            });
-            $("#btn2").click(function() {
-                $("#alert2").fadeOut(5000);
-            });
-            $("#btn3").click(function() {
-                $("#alert3").fadeOut(5000);
-            });
-            $("#btn4").click(function() {
-                $("#alert4").fadeOut(5000);
-            });
-            $("#btn5").click(function() {
-                $("#alert5").fadeOut(5000);
-            });
-            $("#btn6").click(function() {
-                $("#alert6").fadeOut(5000);
-            });
+            for (let i = 1; i <= 6; i++) {
+                $(`#btn${i}`).click(function() {
+                    $(`#alert${i}`).fadeOut(5000);
+                });
+            }
         });
     </script>
 </body>
