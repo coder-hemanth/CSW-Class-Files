@@ -15,49 +15,63 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        img {
+            height: 400px;
+        }
+    </style>
 </head>
 <body>
-    <div id="demo" class="container carousel slide" data-ride="carousel">
-        <ul class="carousel-indicators">
-            <li class="active" data-target="#demo" data-slide-to="0"></li>
-            <li data-target="#demo" data-slide-to="1"></li>
-            <li data-target="#demo" data-slide-to="2"></li>
-        </ul>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="https://as2.ftcdn.net/v2/jpg/01/11/95/11/1000_F_111951189_jWS75ZV2voXzBU1eOTLUUyv9xe1YkIuJ.jpg" alt="sky1">
-                <div class="carousel-caption">
-                    <p>Just enjoy whenever you're now!</p>
+    <div class="container mt-4">
+        <div id="demo" class="carousel slide" data-ride="carousel">
+            <!-- Carousel indicators -->
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+                <li data-target="#demo" data-slide-to="3"></li>
+            </ul>
+
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://pixlr.com/images/generator/how-to-generate.webp" alt="Image 1" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <h3>Author</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://pixlr.com/images/generator/how-to-generate.webp" alt="Image 2" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <h3>Author</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://pixlr.com/images/generator/how-to-generate.webp" alt="Image 3" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <h3>Author</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://pixlr.com/images/generator/how-to-generate.webp" alt="Image 4" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <h3>Author</h3>
+                    </div>
                 </div>
             </div>
-            <div class="carousel-item">
-                <img src="https://as2.ftcdn.net/v2/jpg/01/11/95/11/1000_F_111951189_jWS75ZV2voXzBU1eOTLUUyv9xe1YkIuJ.jpg" alt="sky2">
-                <div class="carousel-caption">
-                    <p>The sky speaks in many colors!</p>
-                    <h3>Author</h3>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="https://as2.ftcdn.net/v2/jpg/01/11/95/11/1000_F_111951189_jWS75ZV2voXzBU1eOTLUUyv9xe1YkIuJ.jpg" alt="sky3">
-                <div class="carousel-caption">
-                    <p>When snow falls nature listens!</p>
-                    <h3>Antoinette Van kieeff</h3>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="https://as2.ftcdn.net/v2/jpg/01/11/95/11/1000_F_111951189_jWS75ZV2voXzBU1eOTLUUyv9xe1YkIuJ.jpg" alt="sky4">
-                <div class="carousel-caption">
-                    <p>Every Winter has its Spring!</p>
-                    <h3>H Tuttle</h3>
-                </div>
-            </div>
+
+            <!-- Carousel controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
         </div>
-        <a class="carousel-control-prev" href="#demo" data-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-        </a>
-        <a class="carousel-control-next" href="#demo" data-slide="next">
-            <span class="carousel-control-next-icon"></span>
-        </a>
     </div>
 </body>
 </html>
